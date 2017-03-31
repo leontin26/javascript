@@ -1,5 +1,5 @@
 # programe javascript
 ## programe telefoane mobile
 
-# programe tableta
+## programe tableta
 ## programe smartwatch
