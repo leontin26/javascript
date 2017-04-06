@@ -3,3 +3,5 @@
 ...
 ## programe tableta
 ## programe smartwatch
+
+Leontin Neamtu
