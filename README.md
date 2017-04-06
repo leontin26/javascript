@@ -1,4 +1,4 @@
-# programe javascript
+# programe javascript facute la scoala
 ## programe telefoane mobile
 ...
 ## programe tableta
