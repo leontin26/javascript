@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="x"></p>
+<p id="y"></p>
+<p id="z"></p>
+ 
+
+<script>
+window.addEventListener("deviceorientation", on_device_orientation);
+
+function on_device_orientation(event)
+{
+	document.getElementById("x").innerHTML = event.alpha;
+	document.getElementById("y").innerHTML = event.beta;
+	document.getElementById("z").innerHTML = event.gamma;
+	
+}
+
+</script>
+
+
+</body>
+
+</html>
