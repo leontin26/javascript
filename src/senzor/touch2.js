@@ -1,6 +1,7 @@
 
 window.addEventListener("touchstart", on_touchstart);
 window.addEventListener("touchmove", on_touchmove);
+window.addEventListener("touchend", on_touchend);
 
 var touch_colors = ["#FF0000", "#00FF00", "#0000FF", "#0F0F00", "#F0F0F0"];
  
@@ -60,3 +61,16 @@ function on_touchmove(evt)
 		ctx.stroke();
 	}
 }
+
+ function on_touchend(evt)
+ {
+	 var touches = evt.changedTouches;
+	 
+	 	 for (var i = 0; i < touches.length; i++)
+		   for (var j = 0; j < touch_id.length; j++)
+			 if (touches[i].identifier == touch_id[j].id){
+				 touch_id.splice(j, 1);
+				 i--;
+				 break;
+		     }
+ }
